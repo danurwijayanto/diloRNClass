@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View } from 'react-native';
+import { Button, StyleSheet, View } from 'react-native';
 
 import InputComponent from '../Input';
 
@@ -30,8 +30,13 @@ const HomeComponent = () => {
                 value={state.repository}
                 name='repository'
                 handleChange={handleChange}/>
+            <Button title='Submit' disabled={!state.owner || !state.repository}/>
         </View>
     )
 }
-
+const styles = StyleSheet.create({
+    repositoryInput: {
+        marginVertical: 12
+    }
+})
 export default HomeComponent
