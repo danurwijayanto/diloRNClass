@@ -23,6 +23,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import HomeComponent from './component/Home'
 
 const App: () => React$Node = () => {
   return (
@@ -39,6 +40,7 @@ const App: () => React$Node = () => {
             </View>
           )}
           <View style={styles.body}>
+            <HomeComponent/>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
