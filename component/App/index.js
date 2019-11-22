@@ -23,7 +23,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import HomeComponent from './component/Home'
+import HomeComponent from '../Home'
 
 const App: () => React$Node = () => {
   return (
